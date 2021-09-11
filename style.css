@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Henny+Penny&family=Kristi&family=Oregano&display=swap');
+
+
+/* font-family: 'Chewy', cursive;
+font-family: 'Henny Penny', cursive;
+font-family: 'Kristi', cursive;
+font-family: 'Oregano', cursive; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oregano', cursive;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: var(--fondo1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/img/1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+
+.app{
+    width: 90%;
+    height: 80%;
+    background-image: url(/img/2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}

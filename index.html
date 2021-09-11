@@ -9,14 +9,14 @@
     <title>Sabor Gourmet</title>
 </head>
 <body>
-    <div id="app">
-        <p>{{title}} {{edad}}</p>
-        <button v-on:click='edad++'>Sumar años</button>
-        <div @click="title = 'Prueba'">Cambiar titulo</div>
+    <div class="container">
+        <div id="app" class="app">
+            <h1 class="title">{{title}}</h1>
+            <button v-on:click>¡Mírame!</button>
+            <div @click="title = 'Prueba'">Cambiar titulo</div>
+            <p class="text">{{parrafo}}</p>
+        </div>
     </div>
-
-
-
     <script src="main.js"></script>
 </body>
 </html>
