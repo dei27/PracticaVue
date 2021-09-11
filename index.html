@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,15 +9,26 @@
     <script src="https://unpkg.com/vue@next"></script>
     <title>Sabor Gourmet</title>
 </head>
+
 <body>
     <div class="container">
         <div id="app" class="app">
+
             <h1 class="title">{{title}}</h1>
-            <button v-on:click>¡Mírame!</button>
-            <div @click="title = 'Prueba'">Cambiar titulo</div>
-            <p class="text">{{parrafo}}</p>
+
+            <button class="app__button">Abrir Menú</button>
+
+            <p v-if="textoMostrar">{{text1}}</p>
+
+            <div @click="Change">
+                <p v-if="!textoMostrar">{{text2}}</p>
+                <a v-if="textoMostrar" href="#">{{text3}}</a>
+                <a v-if="!textoMostrar" href="#">{{text4}}</a>
+            </div>
+
         </div>
     </div>
     <script src="main.js"></script>
 </body>
+
 </html>
