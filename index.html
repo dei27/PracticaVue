@@ -1,14 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="/main.js"></script>
-    <title>Práctica Vue</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <title>Sabor Gourmet</title>
 </head>
 <body>
-    
+    <div id="app">
+        <p>{{title}} {{edad}}</p>
+        <button v-on:click='edad++'>Sumar años</button>
+        <div @click="title = 'Prueba'">Cambiar titulo</div>
+    </div>
+
+
+
+    <script src="main.js"></script>
 </body>
 </html>
