@@ -13,18 +13,36 @@
 <body>
     <div class="container">
         <div id="app" class="app">
-            <h1 class="title">{{title}}</h1>
+            <div v-if="mostrarMenu" class="app__item">
+                <h1 class="title">{{title}}</h1>
 
-            <button class="app__button">Abrir Menú</button>
+                <button class="app__button" @click="VerMenu">Abrir Menú</button>
 
-            <p v-if="textoMostrar">{{text1}}</p>
+                <p v-if="textoMostrar">{{text1}}</p>
 
-            <div @click="Change">
-                <p v-if="!textoMostrar">{{text2}}</p>
-                <a v-if="textoMostrar" href="#">{{text3}}</a>
-                <a v-if="!textoMostrar" href="#">{{text4}}</a>
+                <div @click="Change">
+                    <p v-if="!textoMostrar">{{text2}}</p>
+                    <a v-if="textoMostrar" href="#">{{text3}}</a>
+                    <a v-if="!textoMostrar" href="#">{{text4}}</a>
+                </div>
             </div>
 
+            <div v-if="!mostrarMenu" class="app__item2">
+
+                <h1 class="title">{{Menu[num].title}}</h1>
+
+                <div class="imgs">
+                    <img :src="Menu[num].img1" alt="" class="img1">
+                    <img :src="Menu[num].img2" alt="" class="img2">
+                    <img :src="Menu[num].img3" alt="" class="img3">
+                    <img :src="Menu[num].img4" alt="" class="img4">
+                    <img :src="Menu[num].img5" alt="" class="img5">
+                    <img :src="Menu[num].img6" alt="" class="img6">
+                    <div class="img7"></div>
+                </div>
+                <div @click='num++'><img src="/img/Icons/left.svg" alt=""></div>
+                <div @click='num--'><img src="/img/Icons/right.svg" alt=""></div>
+            </div>
         </div>
     </div>
     <script src="main.js"></script>
