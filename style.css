@@ -23,7 +23,7 @@ font-family: 'Oregano', cursive; */
     display: flex;
     min-width: 280px;
     min-height: 280px;
-    background-image: url(/img/1.jpg);
+    background-image: url(/img/Fondos/1.jpg);
     justify-content: center;
     align-items: center;
     background-repeat: no-repeat;
@@ -38,7 +38,7 @@ font-family: 'Oregano', cursive; */
     position: absolute;
     width: 90%;
     height: 90%;
-    background-image: url(/img/2.jpg);
+    background-image: url(/img/Fondos/2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
