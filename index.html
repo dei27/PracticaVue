@@ -20,7 +20,7 @@
 
                 <p v-if="textoMostrar">{{text1}}</p>
 
-                <div @click="Change">
+                <div @click="change">
                     <p v-if="!textoMostrar">{{text2}}</p>
                     <a v-if="textoMostrar" href="#">{{text3}}</a>
                     <a v-if="!textoMostrar" href="#">{{text4}}</a>
@@ -30,13 +30,13 @@
             <div v-if="!mostrarMenu" class="app__item2">
                 <div class="imgs">
                     <h1 class="title title__img">{{Menu[num].title}}</h1>
-                    <img :src="Menu[num].img1" :alt="Menu[num].descripcion1" class="img1">
-                    <img :src="Menu[num].img2" alt="Menu[num].descripcion2" class="img2">
-                    <img :src="Menu[num].img3" alt="Menu[num].descripcion3" class="img3">
-                    <img :src="Menu[num].img4" alt="Menu[num].descripcion4" class="img4">
-                    <img :src="Menu[num].img5" alt="Menu[num].descripcion5" class="img5">
-                    <img :src="Menu[num].img6" alt="Menu[num].descripcion6" class="img6">
-                    <div class="img7">hola</div>
+                    <img :src="Menu[num].imgs[0]" :alt="Menu[num].description[0]" class="img1">
+                    <img :src="Menu[num].imgs[1]" :alt="Menu[num].description[1]" class="img2">
+                    <img :src="Menu[num].imgs[2]" :alt="Menu[num].description[2]" class="img3">
+                    <img :src="Menu[num].imgs[3]" :alt="Menu[num].description[3]" class="img4">
+                    <img :src="Menu[num].imgs[4]" :alt="Menu[num].description[4]" class="img5">
+                    <img :src="Menu[num].imgs[5]" :alt="Menu[num].description[5]" class="img6">
+                    <div class="img7">div para imagen click</div>
                     <div @click='num--'><img src="/img/Icons/left.svg" alt="" class="aLeft"></div>
                     <div @click='num++'><img src="/img/Icons/right.svg" alt="" class="aRight"></div>
                 </div>

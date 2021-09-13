@@ -30,6 +30,7 @@ font-family: 'Oregano', cursive; */
     align-items: center;
     min-width: 280px;
     min-height: 280px;
+    max-width: 1200px;
     background-image: url(/img/Fondos/1.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -85,10 +86,36 @@ font-family: 'Oregano', cursive; */
 .title__img{
     grid-area: title__img;
 }
-
+.img1{
+    grid-area: img1;
+}
+.img2{
+    grid-area: img2;
+}
+.img3{
+    grid-area: img3;
+}
+.img4{
+    grid-area: img4;
+}
+.img5{
+    grid-area: img5;
+}
+.img6{
+    grid-area: img6;
+}
 .img7{
     grid-area: img7;
 }
+
+.aLeft{
+    grid-area: aLeft;
+}
+
+.aRight{
+    grid-area: aRight;
+}
+
 .imgs {
     display: grid;
     gap: 20px;
@@ -100,4 +127,37 @@ font-family: 'Oregano', cursive; */
         "img7 img7"
         "aLeft aRight";
         justify-items:center;
+}
+
+/*---------------------------------------------------------Media*/
+@media (min-width:500px){
+    .imgs>img {
+        width: 100%;
+    }
+
+    .app__item2 {
+        width: 400px;
+        height: 380px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .imgs {
+        display: grid;
+        gap: 10px;
+        grid-template-areas:
+            "aLeft title__img title__img img7 aRight"
+            "aLeft img1 img2 img7 aRight"
+            "aLeft img3 img4 img7 aRight"
+            "aLeft img5 img6 img7 aRight";
+            justify-items:center;
+            align-items: center;
+    }
+
+    .app__button {
+        padding: 5px;
+        font-size: 10px;
+    }
 }

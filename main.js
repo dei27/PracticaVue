@@ -12,22 +12,39 @@ const app = Vue.createApp({
             text3: 'Leer más...',
             text4: 'Leer menos...',
             num:0,
-            Menu:[
-                {title:'FastFood', img1:'/img/FastFood/1.jpg',nombre1:'Comida 1',descripcion1:'Descripción del platillo 1', img2:'/img/FastFood/2.jpg',nombre2:'Comida 2',descripcion2:'Descripción del platillo 2', img3:'/img/FastFood/3.jpg',nombre3:'Comida 3',descripcion3:'Descripción del platillo 3', img4:'/img/FastFood/4.jpg', nombre4:'Comida 4',descripcion4:'Descripción del platillo 4', img5:'/img/FastFood/5.jpg', nombre5:'Comida 5',descripcion5:'Descripción del platillo 5',img6:'/img/FastFood/6.jpg',nombre6:'Comida 6',descripcion6:'Descripción del platillo 6'},
+            Menu:
+            [
+                {
+                    title:'FastFood',
+                    nombres:['Comida 1', 'Comida 2', 'Comida 3', 'Comida 4', 'Comida 5', 'Comida 6'],
+                    imgs:['/img/FastFood/1.jpg','/img/FastFood/2.jpg','/img/FastFood/3.jpg','/img/FastFood/4.jpg','/img/FastFood/5.jpg','/img/FastFood/6.jpg'],
+                    description:['Descripción del platillo 1','Descripción del platillo 2','Descripción del platillo 3','Descripción del platillo 4','Descripción del platillo 5','Descripción del platillo 6']
+                },
 
-                {title:'Bebidas', img1:'/img/Bebidas/1.jpg', nombre1:'Bebida 1',descripcion1:'Descripción de la bebida 1', img2:'/img/Bebidas/2.jpg', nombre2:'Bebida 2',descripcion2:'Descripción de la bebida 2',img3:'/img/Bebidas/3.jpg', nombre3:'Bebida 3',descripcion3:'Descripción de la bebida 3',img4:'/img/Bebidas/4.jpg', nombre4:'Bebida 4',descripcion4:'Descripción de la bebida 4',img5:'/img/Bebidas/5.jpg', nombre5:'Bebida 5',descripcion5:'Descripción de la bebida 5',img6:'/img/Bebidas/6.jpg',nombre6:'Bebida 6',descripcion6:'Descripción de la bebida 6'},
-                
-                {title:'Postres', img1:'/img/Postres/1.jpg', nombre1:'Postre 1',descripcion1:'Descripción del postre 1', img2:'/img/Postres/2.jpg', nombre2:'Postre 2',descripcion2:'Descripción del postre 2',img3:'/img/Postres/3.jpg', nombre3:'Postre 3',descripcion3:'Descripción del postre 3',img4:'/img/Postres/4.jpg',nombre4:'Postre 4',descripcion4:'Descripción del postre 4', img5:'/img/Postres/5.jpg', nombre5:'Postre 5',descripcion5:'Descripción del postre 5',img6:'/img/Postres/6.jpg',nombre6:'Postre 6',descripcion6:'Descripción del postre 6'}
-            ]
+                {
+                    title:'Bebidas',
+                    nombres:['Bebidas 1', 'Bebidas 2', 'Bebidas 3', 'Bebidas 4', 'Bebidas 5', 'Bebidas 6'],
+                    imgs:['/img/Bebidas/1.jpg','/img/Bebidas/2.jpg','/img/Bebidas/3.jpg','/img/Bebidas/4.jpg','/img/Bebidas/5.jpg','/img/Bebidas/6.jpg'],
+                    description:['Descripción de Bebida 1','Descripción de Bebida 2','Descripción de Bebida 3','Descripción de Bebida 4','Descripción de Bebida 5','Descripción de Bebidas 6']
+                },
+
+                {
+                    title:'Postres',
+                    nombres:['Postres 1', 'Postres 2', 'Postres 3', 'Postres 4', 'Postres 5', 'Postres 6'],
+                    imgs:['/img/Postres/1.jpg','/img/Postres/2.jpg','/img/Postres/3.jpg','/img/Postres/4.jpg','/img/Postres/5.jpg','/img/Postres/6.jpg'],
+                    description:['Descripción del Postre 1','Descripción del Postre 2','Descripción del Postre 3','Descripción del Postre 4','Descripción del Postre 5','Descripción del Postre 6']
+                },
+            ],
+            
         }
     },                  
     methods:{
-        Change(){
+        change(){
             this.textoMostrar=!this.textoMostrar
         },
         VerMenu(){
             this.mostrarMenu=!this.mostrarMenu
-        }
+        }  
     }
 });
 
