@@ -11,6 +11,7 @@ font-family: 'Oregano', cursive; */
 
 .imgs>img {
     width: 100px;
+    height: 80px;
 }
 
 * {
@@ -48,6 +49,10 @@ font-family: 'Oregano', cursive; */
     border-radius: 10px;
     padding: 10px;
     gap: 10px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .app__item {
@@ -77,12 +82,22 @@ font-family: 'Oregano', cursive; */
     font-size: 20px;
 }
 
+.title__img{
+    grid-area: title__img;
+}
 
+.img7{
+    grid-area: img7;
+}
 .imgs {
     display: grid;
-    gap: 10px;
+    gap: 20px;
     grid-template-areas:
+        "title__img title__img "
         "img1 img2"
         "img3 img4"
-        "img5 img6";
+        "img5 img6"
+        "img7 img7"
+        "aLeft aRight";
+        justify-items:center;
 }
